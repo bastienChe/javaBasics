@@ -1,11 +1,14 @@
 package learningJavaLanguage.advancedClasses.local;
 
 public class LocalClassExample {
+	// Local classes are classes that are defined in a block, which is a group of zero or more statements between balanced braces.
+	// You typically find local classes defined in the body of a method.
+
 	static String regularExpression = "[^0-9]";
 
 	public static void validatePhoneNumber(String phoneNumber1, String phoneNumber2) {
 
-		int numberLength = 10;
+		final int numberLength = 10;
 
 		class PhoneNumber {
 
